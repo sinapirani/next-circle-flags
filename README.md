@@ -1,51 +1,30 @@
-# circle-flags
+# react-circle-flags
 
-A collection of circular SVG country flags.
+> React circle flags (based on circle-flags repo)
+
+[![NPM](https://img.shields.io/npm/v/react-circle-flags.svg)](https://www.npmjs.com/package/react-circle-flags) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+## Install
+
+```bash
+npm install --save react-circle-flags
+```
 
 ## Usage
 
+```jsx
+import React, { Component } from 'react'
+
+import MyComponent from 'react-circle-flags'
+import 'react-circle-flags/dist/index.css'
+
+class Example extends Component {
+  render() {
+    return <MyComponent />
+  }
+}
 ```
-https://hatscripts.github.io/circle-flags/flags/xx.svg
-```
-(Where `xx` is the [ISO 3166-1 alpha-2 code](https://www.iso.org/obp/ui/#search/code/) of a country).
-
-For example, the following code:
-```html
-<img src="https://hatscripts.github.io/circle-flags/flags/br.svg" width="48">
-<img src="https://hatscripts.github.io/circle-flags/flags/ca.svg" width="48">
-<img src="https://hatscripts.github.io/circle-flags/flags/gb.svg" width="48">
-<img src="https://hatscripts.github.io/circle-flags/flags/jp.svg" width="48">
-<img src="https://hatscripts.github.io/circle-flags/flags/mx.svg" width="48">
-<img src="https://hatscripts.github.io/circle-flags/flags/us.svg" width="48">
-<img src="https://hatscripts.github.io/circle-flags/flags/za.svg" width="48">
-```
-
-...produces this:<br/><br/>
-<img src="https://hatscripts.github.io/circle-flags/flags/br.svg" width="48">
-<img src="https://hatscripts.github.io/circle-flags/flags/ca.svg" width="48">
-<img src="https://hatscripts.github.io/circle-flags/flags/gb.svg" width="48">
-<img src="https://hatscripts.github.io/circle-flags/flags/jp.svg" width="48">
-<img src="https://hatscripts.github.io/circle-flags/flags/mx.svg" width="48">
-<img src="https://hatscripts.github.io/circle-flags/flags/us.svg" width="48">
-<img src="https://hatscripts.github.io/circle-flags/flags/za.svg" width="48">
-
-To view all the available flags, check the [gallery](all-flags.md).
-
-## Contributing
-
-To contribute, you need to have [svgo](https://github.com/svg/svgo) installed
-(version 1.2.0 or newer).
-
-First, edit the relevant SVG files in the `flags/` directory.
-
-Then run `svgo` to optimize the SVG files:
-
-```sh
-svgo ./flags --recursive --config=svgo.yml
-```
-
-Then commit the changes, and submit them as a pull request.
 
 ## License
 
-This project is released under the [MIT license](LICENSE).
+MIT © [tnovau](https://github.com/tnovau)
