@@ -14,16 +14,12 @@ npm install --save react-circle-flags
 
 ```jsx
 import React, { Component } from 'react'
+import { CircleFlag } from 'react-circle-flags'
 
-import MyComponent from 'react-circle-flags'
-import 'react-circle-flags/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+export const SpanishFlag = () => <CircleFlag country="es" height="35" />
 ```
+
+You can pass all the react's `SVGProps<SVGSVGElement>` props to CircleFlag. :rocket:
 
 ## License
 
