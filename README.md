@@ -19,7 +19,7 @@ import { CircleFlag } from 'react-circle-flags'
 export const SpanishFlag = () => <CircleFlag country="es" height="35" />
 ```
 
-You can pass all the react's `SVGProps<SVGSVGElement>` props to CircleFlag. :rocket:
+You can pass all the react's `React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>` props to CircleFlag. :rocket:
 
 ## License
 
