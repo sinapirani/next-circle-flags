@@ -3,7 +3,7 @@ import React from 'react'
 const CDN_URL = 'https://hatscripts.github.io/circle-flags/flags/'
 const FILE_SUFFIX = 'svg'
 
-const DEFAULT_COUNTRY_CODE = 'xx'
+const UNKNOWN_FLAG = 'xx'
 const DEFAULT_HEIGHT = 100
 
 /**
@@ -23,9 +23,6 @@ const getSvgProps = (countryCode, otherProps) => ({
 export const CircleFlag = ({ countryCode, ...otherProps }) => (
   <img
     data-testid='circle-country-flag'
-    {...getSvgProps(
-      (countryCode || DEFAULT_COUNTRY_CODE).toLowerCase(),
-      otherProps
-    )}
+    {...getSvgProps((countryCode || UNKNOWN_FLAG).toLowerCase(), otherProps)}
   />
 )
