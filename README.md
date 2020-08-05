@@ -16,7 +16,7 @@ npm install --save react-circle-flags
 import React from 'react'
 import { CircleFlag } from 'react-circle-flags'
 
-export const SpanishFlag = () => <CircleFlag country="es" height="35" />
+export const SpanishFlag = () => <CircleFlag countryCode="es" height="35" />
 ```
 
 You can pass all the react's `React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>` props to CircleFlag. :rocket:
