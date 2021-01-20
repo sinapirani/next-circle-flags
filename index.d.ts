@@ -16,6 +16,6 @@ declare function CircleFlag(props: CircleFlagProps): JSX.Element;
 
 export { CircleFlag }
 
-declare var countries: Record<string, boolean>
+declare var countries: Record<string, boolean>;
 
 export { countries };
