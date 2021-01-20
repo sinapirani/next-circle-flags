@@ -1,5 +1,4 @@
 import { DetailedHTMLProps, ImgHTMLAttributes } from "react";
-import countryData from './src/countries'
 
 export interface CircleFlagProps extends DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> {
   countryCode: string;
@@ -17,6 +16,6 @@ declare function CircleFlag(props: CircleFlagProps): JSX.Element;
 
 export { CircleFlag }
 
-const countries: Record<string, boolean> = countryData;
+declare var countries: Record<string, boolean>
 
-export { countries }
+export { countries };
