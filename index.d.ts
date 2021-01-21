@@ -14,8 +14,7 @@ export interface CircleFlagProps extends DetailedHTMLProps<ImgHTMLAttributes<HTM
  */
 declare function CircleFlag(props: CircleFlagProps): JSX.Element;
 
-export { CircleFlag }
-
 declare var countries: Record<string, boolean>;
 
-export { countries };
+export { CircleFlag, countries };
+
