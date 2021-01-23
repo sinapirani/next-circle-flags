@@ -1,6 +1,6 @@
 import { DetailedHTMLProps, ImgHTMLAttributes } from "react";
 
-export interface CircleFlagProps extends DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> {
+interface CircleFlagProps extends DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> {
   countryCode: string;
 }
 
@@ -16,5 +16,5 @@ declare function CircleFlag(props: CircleFlagProps): JSX.Element;
 
 declare var countries: Record<string, boolean>;
 
-export { CircleFlag, countries };
+export { CircleFlag, CircleFlagProps, countries }
 
