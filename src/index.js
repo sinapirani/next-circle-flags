@@ -9,13 +9,13 @@ const DEFAULT_HEIGHT = 100
 
 /**
  * @param {string} countryCode
- * @param {Omit<import('../react-circle-flags').CircleFlagProps, "countryCode">} otherProps
+ * @param {Omit<import('../index').CircleFlagProps, "countryCode">} otherProps
  */
 const getSvgProps = (countryCode, otherProps) => ({
   ...otherProps,
   title: otherProps.title || countryCode,
   height: otherProps.height || DEFAULT_HEIGHT,
-  src: `${CDN_URL}${countryCode}.${FILE_SUFFIX}`
+  src: `${otherProps.cdnUrl || CDN_URL}${countryCode}.${FILE_SUFFIX}`
 })
 
 /**
@@ -25,7 +25,7 @@ const parseCountryCode = (countryCode) =>
   countries[countryCode] ? countryCode : UNKNOWN_FLAG
 
 /**
- * @param {import('../react-circle-flags').CircleFlagProps} param0
+ * @param {import('../index').CircleFlagProps} param0
  */
 export const CircleFlag = ({ countryCode, ...otherProps }) => (
   <img
