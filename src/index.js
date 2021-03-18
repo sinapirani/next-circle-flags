@@ -9,13 +9,14 @@ const DEFAULT_HEIGHT = 100
 
 /**
  * @param {string} countryCode
- * @param {Omit<import('../index').CircleFlagProps, "countryCode">} otherProps
+ * @param {string} cdnUrl
+ * @param {Omit<import('../index').CircleFlagProps, "countryCode" | "cdnUrl">} otherProps
  */
-const getSvgProps = (countryCode, otherProps) => ({
+const getSvgProps = (countryCode, cdnUrl, otherProps) => ({
   ...otherProps,
   title: otherProps.title || countryCode,
   height: otherProps.height || DEFAULT_HEIGHT,
-  src: `${otherProps.cdnUrl || CDN_URL}${countryCode}.${FILE_SUFFIX}`
+  src: `${cdnUrl || CDN_URL}${countryCode}.${FILE_SUFFIX}`
 })
 
 /**
@@ -27,10 +28,14 @@ const parseCountryCode = (countryCode) =>
 /**
  * @param {import('../index').CircleFlagProps} param0
  */
-export const CircleFlag = ({ countryCode, ...otherProps }) => (
+export const CircleFlag = ({ countryCode, cdnUrl, ...otherProps }) => (
   <img
     data-testid='circle-country-flag'
-    {...getSvgProps(parseCountryCode(countryCode).toLowerCase(), otherProps)}
+    {...getSvgProps(
+      parseCountryCode(countryCode).toLowerCase(),
+      cdnUrl,
+      otherProps
+    )}
   />
 )
 
