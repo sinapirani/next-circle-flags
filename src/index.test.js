@@ -27,6 +27,22 @@ describe('CircleFlag', () => {
     expect(countryFlag.getAttribute('height')).toBe('35')
   })
 
+  it('should render correctly with cdnUrl parameter', () => {
+    const { getByTestId } = render(
+      <CircleFlag
+        countryCode='es'
+        height='35'
+        title='Spain'
+        cdnUrl='https://magic-cdn.com/flags/'
+      />
+    )
+    const countryFlag = getByTestId('circle-country-flag')
+    expect(countryFlag).toBeInTheDocument()
+    expect(countryFlag.getAttribute('src')).toBe(
+      'https://magic-cdn.com/flags/es.svg'
+    )
+  })
+
   it('should render UNKNOWN_FLAG if the countryCode is not in countries', () => {
     const { getByTestId } = render(
       <CircleFlag countryCode='Argentina' height='35' />
