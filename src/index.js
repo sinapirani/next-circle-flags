@@ -19,11 +19,11 @@ const DEFAULT_QUALITY = 100
 const getSvgProps = (countryCode, cdnUrl, fill, height, width, quality, otherProps) => ({
   ...otherProps,
   title: otherProps.title || countryCode,
-  height: height || DEFAULT_HEIGHT,
-  width: width || DEFAULT_WIDTH,
-  quality: quality || DEFAULT_QUALITY,
+  height: otherProps.height || DEFAULT_HEIGHT,
+  width: otherProps.width || DEFAULT_WIDTH,
+  quality: otherProps.quality || DEFAULT_QUALITY,
   src: `${cdnUrl || CDN_URL}${countryCode}.${FILE_SUFFIX}`,
-  ...!height && !width && { fill },
+  ...!otherProps.height && !otherProps.width && { fill: otherProps.fill },
 })
 
 /**
@@ -40,11 +40,7 @@ export const CircleFlag = ({ countryCode, cdnUrl, quality, height, width, ...oth
     {...getSvgProps(
       parseCountryCode(countryCode).toLowerCase(),
       cdnUrl,
-      fill,
-      height,
-      width,
-      quality,
-      otherProps,
+      otherProps
     )}
 />
 }
