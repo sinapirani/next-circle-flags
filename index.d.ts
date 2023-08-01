@@ -13,16 +13,16 @@ interface CircleFlagProps extends DetailedHTMLProps<ImgHTMLAttributes<HTMLImageE
   /**
    * change quality based on next/image
    */
-  quality: number
+  quality?: number
 
   /**
    * A boolean that causes the image to fill the parent element instead of setting width and height.
    */
-  fill: boolean
+  fill?: boolean
 
-  height: number
+  height?: number
 
-  width: number
+  width?: number
 }
 
 /**
