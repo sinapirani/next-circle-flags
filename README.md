@@ -1,20 +1,20 @@
-# react-circle-flags
+# next-circle-flags
 
 > React circle flags (based on [circle-flags](https://github.com/HatScripts/circle-flags))
 
-[![NPM](https://img.shields.io/npm/v/react-circle-flags.svg)](https://www.npmjs.com/package/react-circle-flags) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![codecov](https://codecov.io/gh/tnovau/react-circle-flags/branch/master/graph/badge.svg)](https://codecov.io/gh/tnovau/react-circle-flags) ![Node.js CI](https://github.com/tnovau/react-circle-flags/workflows/Node.js%20CI/badge.svg)
+[![NPM](https://img.shields.io/npm/v/next-circle-flags.svg)](https://www.npmjs.com/package/next-circle-flags) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![codecov](https://codecov.io/gh/sinapirani/next-circle-flags/branch/master/graph/badge.svg)](https://codecov.io/gh/sinapirani/next-circle-flags) ![Node.js CI](https://github.com/sinapirani/next-circle-flags/workflows/Node.js%20CI/badge.svg)
 
 ## Install
 
 ```bash
-npm install --save react-circle-flags
+npm install --save next-circle-flags
 ```
 
 ## Usage
 
 ```jsx
 import React from 'react'
-import { CircleFlag } from 'react-circle-flags'
+import { CircleFlag } from 'next-circle-flags'
 
 export const SpanishFlag = () => <CircleFlag countryCode="es" height="35" />
 ```
@@ -23,7 +23,7 @@ export const SpanishFlag = () => <CircleFlag countryCode="es" height="35" />
 
 ```jsx
 import React from 'react'
-import { CircleFlag } from 'react-circle-flags'
+import { CircleFlag } from 'next-circle-flags'
 
 export const SpanishFlag = () => <CircleFlag countryCode="es" height="35" cdnUrl="https://magic-cdn.com/flags/" />
 ```
@@ -32,8 +32,8 @@ You can pass all the react's `React.DetailedHTMLProps<React.ImgHTMLAttributes<HT
 
 ## Docs && Gallery
 
-Click [here](https://tnovau.github.io/react-circle-flags/)!
+Click [here](https://sinapirani.github.io/next-circle-flags/)!
 
 ## License
 
-MIT © [tnovau](https://github.com/tnovau)
+MIT © [sinapirani](https://github.com/sinapirani)
