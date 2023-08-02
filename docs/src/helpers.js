@@ -1,5 +1,5 @@
 import React from 'react'
-import { CircleFlag } from 'react-circle-flags'
+import { CircleFlag } from 'next-circle-flags'
 
 export const Container = ({ children }) => (
   <div
@@ -387,7 +387,7 @@ export const Gallery = () => (
   <>
     {Object.keys(countryMap).map((countryCode) => (
       <Item key={countryCode}>
-        <CircleFlag countryCode={countryCode} />
+        <CircleFlag countryCode={countryCode} height={50} width={50} />
         <p>
           {countryMap[countryCode]} (<span>{countryCode.toUpperCase()}</span>)
         </p>

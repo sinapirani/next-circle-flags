@@ -1,5 +1,5 @@
 export default {
-  title: 'react-circle-flags',
+  title: 'next-circle-flags',
   menu: ['Getting Started', 'Gallery'],
-  base: '/react-circle-flags'
+  base: '/next-circle-flags'
 }
