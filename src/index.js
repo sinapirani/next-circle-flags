@@ -5,7 +5,7 @@ import Image from 'next/image'
 const CDN_URL = "http://dl.koochaa.com/"
 const FILE_SUFFIX = 'svg'
 
-const UNKNOWN_FLAG = 'xx'
+const UNKNOWN_FLAG = 'un'
 const DEFAULT_HEIGHT = 100
 const DEFAULT_WIDTH = 100
 const DEFAULT_QUALITY = 100
