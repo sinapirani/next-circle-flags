@@ -2,7 +2,7 @@ import React from 'react'
 import countries from './countries'
 import Image from 'next/image'
 
-const CDN_URL = "https://dl.koochaa.com/flags"
+const CDN_URL = "https://dl.koochaa.com/flags/"
 const FILE_SUFFIX = 'svg'
 
 const UNKNOWN_FLAG = 'un'
