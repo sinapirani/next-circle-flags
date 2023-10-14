@@ -1,5 +1,8 @@
 # next-circle-flags(Powered By next/image) for Next13!
 
+CDN IS CHANGED!
+UPDATE THIS PACKAGE TO LATEST VERSION !
+
 > Next circle flags (based on [circle-flags](https://github.com/HatScripts/circle-flags))
 
 [![NPM](https://img.shields.io/npm/v/next-circle-flags.svg)](https://www.npmjs.com/package/next-circle-flags) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![codecov](https://codecov.io/gh/sinapirani/next-circle-flags/branch/master/graph/badge.svg)](https://codecov.io/gh/sinapirani/next-circle-flags) ![Node.js CI](https://github.com/sinapirani/next-circle-flags/workflows/Node.js%20CI/badge.svg)
