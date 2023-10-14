@@ -1,7 +1,7 @@
 # next-circle-flags(Powered By next/image) for Next13!
 
-CDN IS CHANGED!
-UPDATE THIS PACKAGE TO LATEST VERSION !
+#CDN IS CHANGED!
+#UPDATE THIS PACKAGE TO LATEST VERSION !
 
 > Next circle flags (based on [circle-flags](https://github.com/HatScripts/circle-flags))
 
