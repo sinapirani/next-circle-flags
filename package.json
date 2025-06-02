@@ -1,6 +1,6 @@
 {
   "name": "next-circle-flags",
-  "version": "1.0.17",
+  "version": "1.1.0",
   "description": "A Next component with a collection of 300+ minimal circular SVG country flags",
   "author": "SinaPirani(sinapiranidev@gmail.com)",
   "license": "MIT",
@@ -23,7 +23,8 @@
     "lint": "eslint src/**/*.js docs/**/*.js"
   },
   "peerDependencies": {
-    "react": "^16.0.0 || ^17.0.0 || ^18.0.0"
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "next": "^13.0.0 || ^14.0.0 || ^15.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",
